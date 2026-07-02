@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+  </head>
+      <style>
+      body{
+        background-color:#737378;
+      }
+    </style>
+<script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  <body>
+    <center>
+      <h1>My Favorite MARVEL Songs</h1>
+      div id="plot"></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cKMQz1Rf2ow?si=nkgxMmdoL0qs06Je" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2xomWWncop0?si=-PEOR0qeqV_Qu4NC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ju4KQT0wL0I?si=0pUk4Fbo0RV5EGRj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><a href="index.html">Return to the homepage</a></p>
+      <hr>
+      <p>&copy; STEM Prep 2026</p>
+    </center>
+    <script>
+      var songs =["Sunflower, Am I Dreaming, All the Stars"]
+        var views=[14143765, 16016179, 102477516];
+      var trace={
+        x:songs,
+        y:views,
+        type:"bar"
+      };
+      var data=[trace];
+      var layout={title:"My Favorite MARVEL Songs"};
+      Plotly.newPlot("plot",data,layout):
+    </script>
+  </body>
+</html>
