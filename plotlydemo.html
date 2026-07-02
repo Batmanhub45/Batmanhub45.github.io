@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Adolphe's website</title>
+    <title>Plotly Demo</title>
   </head>
       <style>
       body{
@@ -10,9 +10,21 @@
 <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
   <body>
     <center>
+      <h1>My first Plotly Chart</h1>
+      <div id="plot"></div>
       <p><a href="index.html">Return to the homepage</a></p>
       <hr>
       <p>&copy; STEM Prep 2026</p>
     </center>
+    <script>
+      var trace={
+        x: [1,2,3,4,5],
+        y: [7,18,25,37,47],
+        mode: "lines"
+      };
+      var data=[trace];
+      var layout={title: "My first Plot"}:];
+      Plolty.newPlot("plot",data,layout);
+    </script>
   </body>
 </html>
