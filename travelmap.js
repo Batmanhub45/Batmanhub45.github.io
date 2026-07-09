@@ -1,5 +1,5 @@
-// 42.7466° N latitude and -75.7700° W longitude
-var coordinates = [42.7466, -75.7700];
+// 40.7128° N latitude and 74.0060° W longitude
+var coordinates = [40.7128, 74.0060];
 var map = L.map('map').setView(coordinates, 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
