@@ -9,4 +9,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from New York City</p>").addTo(map);
-var marker1 = L.circle(place1,{colo: "Black", fillColor: "#0ca607", radius: 80}).addTo(map);
+var marker1 = L.circle(place1,{colo: "Black", fillColor: "#0ca607", radius: 100}).bindPopup("<p>Hello, from manhattan"addTo(map);
+var marker1 = L.circle(place2,{colo: "Black", fillColor: "#0ca607", radius: 100}).bindPopup("<p>Hello, from brooklyn"addTo(map);
+var marker1 = L.circle(place3,{colo: "Black", fillColor: "#0ca607", radius: 100}).bindPopup("<p>Hello, from queens"addTo(map);
